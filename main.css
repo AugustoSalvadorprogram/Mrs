@@ -1,0 +1,274 @@
+/* Main */
+
+
+.whatswidget-button {
+    position: relative !important;
+    right: 0px !important;
+    background-color: #0D1F4A !important;
+    border-radius: 100% !important;
+    width: 60px !important;
+    height: 60px !important;
+    box-shadow: 2px 1px #0d630d63 !important;
+    transition: 1s !important;
+}
+
+
+.container2{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    color: #0D1F4A;
+}
+
+.container2 .flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    bottom: 150px;
+}
+
+.container2 .flex .chilld2{
+    width: 400px;
+}
+
+.container2 .flex .servicos{
+    text-align: justify;
+}
+
+.container2 .flex .sobre .img{
+    background-image: url(../icon/MRS-Logo1.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 100%;
+    text-align: justify;
+    width: 100%;
+    height: 200px;
+    border-radius: 1000PX;
+    border: 3px solid #016ed4;
+}
+
+.container2 .flex .chilld2 .explorar{
+    background-color: #1c85e7;
+    padding: 10px 60px;
+    border-radius: 40px;
+    color: white;
+}
+
+.container2 .flex .chilld2 .avaliacao{
+    background-color: #1c85e7;
+    padding: 10px 60px;
+    border-radius: 40px;
+    color: white;
+}
+
+.container2 .flex .chilld2 .quem{
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hr{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 0% 10%;
+}
+
+/* Section de Cursos */
+.cursos {
+    background: linear-gradient(-229deg, #0D1F4A, #004b8a);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    background: #f7f7f7;
+    overflow-x: scroll;
+}
+.curso-box {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    flex: 1 1 250px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    margin: 2% 0%;
+}
+.curso-box img {
+    margin-bottom: 1rem;
+}
+.curso-box h2 {
+    font-size: 1.3rem;
+    color: #1c85e7;
+    margin-bottom: 0.7rem;
+}
+.curso-box p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1.2rem;
+}
+.curso-box .explorar {
+    background: #1c85e7;
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.curso-box .explorar:hover {
+    background: #155fa0;
+}
+.curso-box:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+
+
+
+.container2 .Faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: #f7f7f7;
+    width: 100%;
+    text-align: center;
+    padding: 8%;
+    border-top: 2px solid #44444423;
+}
+
+.container2 .Faq h1{
+    font-size: 30pt;
+}
+h2{
+    font-size: 20pt;
+    color: rgba(0, 0, 0, 0.615);
+    margin-bottom: 2%;
+}
+
+summary{
+    padding: auto;
+    font-size: 16pt;
+    color: #1c85e7;
+    cursor: pointer;
+    margin-top: 4%;
+}
+
+details[open]{
+    text-align: justify;
+    font-size: 14pt;
+    background-color: #000000;
+    padding: 4% 4%;
+    transition: ease-in-out 0.6s;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.301);
+}
+
+details:hover{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.301);
+    border: 1px solid #239cff;
+}
+
+details[open]{
+}
+
+
+/* Carrossel Section */
+.carrossel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-229deg, #0D1F4A, #004b8a);
+    padding: 2rem 0;
+    z-index: 1000;
+}
+.carrossel-container {
+    position: relative;
+    width: 90vw;
+    max-width: 700px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.carrossel-slides {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(.77,0,.18,1);
+    width: 100%;
+}
+.carrossel-slide {
+    min-width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.carrossel-slide.active {
+    opacity: 1;
+    position: relative;
+}
+.carrossel-slide img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    margin-bottom: 1rem;
+}
+.carrossel-slide p {
+    font-size: 1.1rem;
+    color: #1c85e7;
+    margin-top: 0.5rem;
+    background: #f7f7f7;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+.carrossel-btn {
+    background: #1c85e7;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    transition: background 0.3s;
+}
+.carrossel-btn:hover {
+    background: #155fa0;
+}
+.carrossel-btn.prev {
+    left: 10px;
+}
+.carrossel-btn.next {
+    right: 10px;
+}

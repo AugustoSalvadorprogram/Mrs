@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Header */
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container1 .chilld1{
+    display: flex;
+    flex-wrap: wrap;
+    top: 0;
+    position: fixed;
+    background-color: white;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    padding: 1% 5%;
+    z-index: 3;
+}
+
+
+
+.container1 .chilld1 .link ul{
+    display: flex;
+}
+
+.container1 .chilld1 .link ul li{
+    padding: 4%;
+}
+
+.container1 .chilld1 .link ul li a{
+    color: rgba(0, 0, 0, 0.651);
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+.container1 .chilld1 .link ul li a:hover{
+    color: #1c85e7;
+    transition: ease-in 0.3s ;
+    transform: scale(1.1) translateY(-2px);
+}
+
+.container1 .chilld1 .log a{
+    padding: 2%;
+    color: #1c85e7;
+}
+
+.container1 .banner{
+    background-image: url(/img/MRS.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    box-shadow: inset 100px 1000px 1000px rgba(0, 0, 0, 0.39);
+    width: 100vw;
+    height: 700px;
+}
+
+.container1 .banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px -20px 20px 0px white;
+}
+
+.container1 .banner .nome h1{
+    color: white;
+    font-size: 50pt; 
+}
+
+.container1 .banner .slogan p{
+    color: white;
+    font-size: 25pt;
+}
+
+.container1 .banner .busca{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.container1 .banner .busca input{
+    background-color: #ffffff;
+    padding: 0.5%;
+    width: 25rem;
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.815);
+    color: rgba(0, 0, 0, 0.616);
+    font-size: 12pt;
+}
+
+.container1 .banner .busca input:hover{
+    background-color: #ffffff5d;
+    padding: 0.5%;
+    width: 25rem;
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.815);
+    color: rgb(255, 255, 255);
+    font-size: 12pt;
+    transition: ease-in-out 0.5s;
+}
+
+.container1 .banner .busca .btn{
+    padding: 0%;
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: #1c85e7;
+    color: white;
+    font-size: 12pt;
+    position: relative;
+    right: 110px;
+}
+
+.container1 .banner .busca .btn:hover{
+    background-color: #0D1F4A;
+    transition: all 1s ease-in-out;
+}
+
+.container1 .banner .busca .btn:focus{
+    border: 0px solid rgba(130, 130, 130, 0.312);
+}
+
+
+.container1 .fotos{
+        width: 100%;
+    text-align: right;
+    display: block;
+    position: absolute;
+    padding-right: 10%;
+    bottom: 100px;
+}
+
+
+
+.container1 .sobre-nos{
+    background-color: white;
+    text-align: left;
+    padding: 0% 4%;
+    color: #0D1F4A;
+}
+
+.container1 .sobre-nos h1{
+    margin: 2% 2%;
+    font-size: 32pt;
+}
+
+.container1 .sobre-nos p{
+    height: 500px;
+    text-align: justify;
+}
+
+.container1 .sobre-nos p:hover{
+    cursor: pointer;
+    transition: ease-in-out 5ms;
+    white-space: unset;
+}
+
+.container1 .sobre-nos .flex-1{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    align-items: left;
+    text-align: justify;
+    width: 100%;
+    height: 500px;
+    margin: 0% 0% 0% 2%;
+    padding: 0% 0%;
+    overflow-y: hidden;
+}
+
+.container1 .sobre-nos .flex-1 .dizeres{
+    width: 40%;
+    font-size: 14pt;
+    color: #0D1F4A;
+    text-align: justify;
+}
+
+.container1 .sobre-nos h1{
+    color: #0a4d8d;
+    font-weight: bolder;
+}

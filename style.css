@@ -1,0 +1,366 @@
+@charset "UTF-8";
+
+/* ANIMAÇÕES */
+@keyframes scroll
+{
+    from{
+        transform: scale(1.5);
+        opacity: 0;
+        scale: 0.5;
+    }
+    top{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes faid{
+    from{
+        opacity: 0;
+        scale: 2.5;
+        translate: -100vw 0;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        filter: 0px;
+        translate: 100vh 0;
+        filter: blur(30px);
+        
+    }
+    to{
+        opacity: 1;
+        filter: 1px;
+        translate: 0 8;
+        filter: blur(0px);
+    }
+}
+
+/* ELEMENTOS ANIMADOS COM SCROLL */
+
+.container2{
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+}
+
+.container1 .chilld1 .slogan{
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+}
+
+.container3{
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+}
+
+/* FIM */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    /* text-align: center; */
+    overflow-x: hidden;
+}
+
+/* SESSÃO DO MENU - [ HEADER]*/
+
+.container1{
+    width: 100%;
+    height: 100%;
+    height: 2000px;
+    background-color: #76b5e9;
+    text-align: center;
+    color: white;
+    
+}
+
+.container1 .chilld1{
+    width: 100%;
+    background-color: /*#1F3B74 */ #0D1F4A ;
+    display: inline-block;
+    background-image:  url(../icon/MRS.png);
+    background-position: left;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    box-shadow: inset 200px 200px 200px rgba(0, 0, 0, 0.466);
+}
+
+.container1 .chilld1 .logo{
+    position: fixed;
+}
+
+.container1 .chilld1 .links{
+    text-align: right;
+    margin-top: 2%;
+}
+
+.container1 .chilld1 .links .ul{
+    width: 100%;
+}
+
+.container1 .chilld1 .links ul li{
+    display: inline-block;
+    padding: 1%;
+
+}
+
+.container1 .chilld1 .links ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.container1 .chilld1 .links ul li a:hover{
+    color: rgb(255, 255, 255);
+    transition: 1s;
+}
+
+.container1 .chilld1 .links ul li #bt-login{
+    background-color: #A7D4F9;
+    padding: 10px 60px;
+    border-radius: 40px;
+    box-shadow: inset 0px 10px 10px rgba(255, 255, 255, 0.466);
+}
+
+.container1 .chilld1 .links ul li #bt-login:hover{
+    background-color: #a7d4f98e;
+    color: white;
+    font-weight: bolder;
+}
+
+.container1 .chilld1 .slogan{
+    animation: scroll linear;
+    animation-timeline: view();
+    animation:  faid 1s;
+}
+
+.container1 .chilld1 .slogan{
+    padding: 2%;
+    color: white;
+    text-align: center;
+    margin-left: 45%;
+}
+
+.container1 .chilld1 .slogan h1{
+    color: white;
+    font-size: 40pt;
+    text-align: center;
+    margin-top: 20%;
+    font-variant: small-caps;
+}
+
+.container1 .chilld1 .slogan .comecar{
+    padding: 20px 100px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: #A7D4F9;
+    color: white;
+    font-variant: small-caps;
+    font-weight: bolder;
+    box-shadow: inset 0px 10px 10px rgba(255, 255, 255, 0.466);
+}
+
+.container1 .chilld1 .slogan .comecar:hover{
+    background-color: #a7d4f98e;
+    color: white;
+    transition: 1s;
+}
+
+    /* SESSÃO DOS CURSOS */
+
+.container1 .chilld1-2{
+    animation: faid 1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(../icon/MRS-livro.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 550px;
+}
+
+.container1 .chilld1-2 {
+    overflow-y: scroll;
+    animation: appear 50ms ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0%;
+}
+
+    .container1 .chilld1-2 .curso{
+    width: 300px;
+    height: 250px;
+    padding: 2%;
+    color: white;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.container1 .chilld1-2 .um{
+    background-color: #0D1F4A;
+    background-image: url(../img/pitao.png);
+    box-shadow: inset 200px 200px 200px rgba(0, 0, 0, 0.562);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.container1 .chilld1-2 .dois{
+    background-color: #0D1F4A;
+    background-image: url(../img/do-sustenido.png);
+    box-shadow: inset 200px 200px 200px rgba(0, 0, 0, 0.562);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.container1 .chilld1-2 .tres{
+    background-color: #0D1F4A;
+    background-image: url(../img/php.png);
+    box-shadow: inset 200px 200px 200px rgba(0, 0, 0, 0.562);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.container1 .chilld1-2 .curso .aderir{
+    padding: 10px 60px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: #A7D4F9;
+    color: rgb(255, 255, 255);
+    box-shadow: inset 0px 10px 10px rgba(255, 255, 255, 0.205);
+    font-weight: bolder;
+}
+
+.container1 .chilld1-2 .curso h3{
+    font-variant: small-caps;
+    font-size: 16pt;
+}
+
+.container1 .chilld1-2 .curso .aderir:hover{
+    background-color: #a7d4f98e;
+    transition: 1s;
+}
+
+/* SESSÃO DO CONTEUDO [MAIN] */
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 500px;
+    margin-top: 5%;
+}
+
+.container2 .chilld1{
+    width: 20%;
+}
+
+.container2  .servicos{
+    text-align: justify;
+}
+
+.container2  .sobre .img{
+    background-image: url(../img/login.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    text-align: justify;
+    width: 100%;
+    height: 200px;
+    border-radius: 1000PX;
+}
+
+.container2 .chilld1 .explorar{
+    background-color: #76b5e9;
+    padding: 10px 60px;
+    border-radius: 40px;
+    color: white;
+}
+
+.container2 .chilld1 .avaliacao{
+    background-color: #484b4dc7;
+    padding: 10px 60px;
+    border-radius: 40px;
+    color: white;
+}
+
+.container2 .chilld1 .quem{
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hr{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 0% 10%;
+}
+
+.container2 .cursos p{
+    font-size: 16pt;
+}
+
+/* SESSÃO DOS CONTATOS [FOOTER]*/
+
+.container3{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container2{
+    .topo {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: #444;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 8px;
+        text-decoration: none;
+      }
+}
+
+.container3 .redes{
+    width: 30%;
+    text-align: justify;
+    padding: 2%;
+}

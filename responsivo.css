@@ -1,0 +1,235 @@
+@media (max-width: 900px) {
+    .container2 .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4em;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 1200px;
+    margin-top: 5%;
+    padding: 4%;
+    }
+
+    .container2 .flex .chilld2 {
+    width: 400px;
+    }
+
+    .cursos {
+        flex-direction: column;
+        padding: 3rem;
+    }
+    
+    .curso-box {
+        max-width: 90vw;
+    }
+
+    details{
+        width: 400px;
+        max-height: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
+
+        summary {
+    padding: auto;
+    font-size: 12pt;
+    color: #1c85e7;
+    cursor: pointer;
+    margin-top: 4%;
+}
+        
+        details p{
+        font-size: 10pt;
+        overflow-x: auto;
+        }
+
+
+    .container2 .sobre-nos p {
+    height: 600px;
+    font-size: 12px;
+    }
+}
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 1024px) {
+    .container1 .chilld1 {
+        height: 4rem;
+        padding: 2% 2%;
+    }
+    .container1 .banner .nome h1 {
+        font-size: 32pt;
+    }
+    .container1 .banner .slogan p {
+        font-size: 12pt;
+    }
+    .container1 .banner .busca input {
+        width: 16rem;
+        font-size: 10pt;
+    }
+    .container1 .banner .busca button {
+        width: 7rem;
+        font-size: 10pt;
+    }
+    .container2 {
+        flex-direction: column;
+        height: auto;
+        margin-top: 8%;
+    }
+    .container2 .chilld2 {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    .container2 .chilld2 .quem {
+        height: auto;
+    }
+    .container2 .sobre .img {
+        height: 120px;
+        border-radius: 500px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .container1 .chilld1 {
+        flex-direction: column;
+        height: auto;
+        padding: 4% 2%;
+        position: static;
+    }
+    .container1 .chilld1 .link ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container1 .chilld1 .link ul li {
+        padding: 2% 0;
+    }
+    .container1 .banner {
+        height: 300px;
+    }
+    .container1 .banner .nome h1 {
+        font-size: 20pt;
+    }
+    .container1 .banner .slogan p {
+        font-size: 10pt;
+    }
+    .container1 .banner .busca input {
+        width: 10rem;
+        font-size: 9pt;
+    }
+    .container1 .banner .busca button {
+        width: 5rem;
+        font-size: 9pt;
+    }
+    .container2 {
+        flex-direction: column;
+        height: auto;
+        margin-top: 12%;
+    }
+    .container2 .chilld2 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .container2 .sobre .img {
+        height: 80px;
+        border-radius: 200px;
+    }
+    .hr {
+        padding: 0% 2%;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+    .carrossel-container {
+        max-width: 98vw;
+    }
+    .carrossel-slide img {
+        max-width: 90vw;
+    }
+
+    /* Menu lateral mobile */
+    .menu-mobile-btn {
+        display: block;
+        position: relative;
+        left: 300px;
+        bottom: 1800px;
+        background: #1c85e7;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 2rem;
+        padding: 0.3rem 0.8rem;
+        cursor: pointer;
+        z-index: 1001;
+        text-align: center;
+    }
+    .menu-lateral-mobile {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70vw;
+        max-width: 320px;
+        height: 100vh;
+        background: #fff;
+        box-shadow: 2px 0 16px rgba(0,0,0,0.12);
+        transform: translateX(-100%);
+        transition: transform 0.3s;
+        z-index: 1000;
+        padding: 2rem 1.2rem 1rem 1.2rem;
+    }
+    .menu-lateral-mobile.open {
+        transform: translateX(0);
+        box-shadow: 100px 100px 1000px #00000036;
+    }
+    .menu-lateral-mobile ul {
+        list-style: none;
+        padding: 0;
+        margin: 2rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .menu-lateral-mobile ul li a {
+        color: #1c85e7;
+        font-size: 1.2rem;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5rem 0;
+        border-radius: 6px;
+        transition: background 0.2s;
+    }
+    .menu-lateral-mobile ul li a:hover {
+        background: #eaf4fd;
+    }
+    .close-menu {
+        background: none;
+        border: none;
+        color: #1c85e7;
+        font-size: 2.2rem;
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        cursor: pointer;
+    }
+    /* Esconde menu desktop e mostra botão mobile */
+    .container1 .chilld1 .link,
+    .container1 .chilld1 .log {
+        display: none;
+    }
+}
+
+@media (min-width: 601px) {
+    .menu-mobile-btn,
+    .menu-lateral-mobile {
+        display: none !important;
+    }
+}
